@@ -6,16 +6,13 @@ from flask import escape, Markup
 from wtforms import Form, TextAreaField, StringField, validators, ValidationError
 import arrow
 
-from flask_sqlalchemy import SQLAlchemy
-from sqlalchemy import desc
-
 app = Flask(__name__)
 
 
 
 @app.route('/')
 def index():
-    return render_template('index.html')
+    return 'Hello World'
 
 
 
